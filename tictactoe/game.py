@@ -153,6 +153,9 @@ class TicTacToe:
 
                 coordinate = self.get_random_move()
 
+                if not coordinate:
+                    sys.exit(0)
+
                 self.move_player(Player.PLAYER_1, coordinate)
 
             except KeyboardInterrupt:
